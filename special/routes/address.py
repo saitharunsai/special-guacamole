@@ -15,11 +15,15 @@ address_router = APIRouter(
 
 
 def get_coordinates(user_address, city, state):
+    '''
+       Need to store key in Env
+       Will get the location meta from mapquest 
+    '''
     _url = (
         u'http://www.mapquestapi.com/geocoding/v1/'
         u'address?key={api_key}&location={user_address},{city},{state}'
     ).format(
-        api_key="6dyDBz1Eaf2Mtb2RbuBSM7pgxhqVvFLk",  # Need to store key in Env
+        api_key="6dyDBz1Eaf2Mtb2RbuBSM7pgxhqVvFLk",
         user_address=user_address,
         city=city,
         state=state
