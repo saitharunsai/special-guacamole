@@ -15,4 +15,3 @@ class Address(Base):
     postal_code = Column(Integer)
     longitude = Column(Float)
     latitude = Column(Float)
-    mapUrl = Column(String)
